@@ -14,7 +14,7 @@ pipeline {
                 steps {
                     sh 'pwd'
                     sh 'ls'
-                    sh "docker build -t igorripin/sample_nodejs:${BUILD_ID} ."
+                    sh "docker build . -t igorripin/sample_nodejs:${BUILD_ID}"
                 }
             }
         stage('run') {
