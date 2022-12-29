@@ -1,13 +1,9 @@
 FROM node
-
-# Create app directory
 WORKDIR /src/app
 
 
-COPY app_sample/ .
+COPY sample-app/ .
 RUN npm install
-
-
-
 EXPOSE 3000
-CMD ["node", "index.js"]
+
+CMD ["node","index.js"]
